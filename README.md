@@ -122,7 +122,7 @@ Pero antes tenemos que ir a [la sección de insertar las entidades(`http://127.0
 ```bash
   php bin/console make:form JuegoForm Juego
 ```
-### 1.4. Seguridad y conrtrol de accesos
+### 1.4. Seguridad y control de accesos
 1. Instalar security 
 
 Symfony ya tiene integrada la gestión de usuarios mediante el bundle security que se instala mediante el siguiente comando:
@@ -140,4 +140,58 @@ Symfony ya tiene integrada la gestión de usuarios mediante el bundle security q
 - [`/migrations/`](/migrations): Contiene las migraciones generadas
 - [`/public/`](./public): Carpeta raíz del servidor local
 ## 3. Explicación del Proyecto
+### 3.1. Descripción General
+El proyecto es una web personal que funciona como una biblioteca de juegos de Nintendo DS. 
+Permite a los usuarios explorar una colección de juegos de la Nintendo DS, ver detalles sobre cada uno y gestionar 
+la base de datos de juegos mediante formularios.
 
+### 3.2. Funcionalidades Principales
+- **Exploración de Juegos**: Los usuarios pueden navegar por una lista de juegos de Nintendo DS.
+- **Detalles del Juego**: Cada juego tiene una página de detalles que muestra información como el 
+título, la descripción, la fecha de lanzamiento y la calificación.
+- **Gestión de Juegos**: Los administradores pueden agregar, editar y eliminar juegos mediante 
+formularios.
+- **Seguridad**: El proyecto incluye un sistema de autenticación para proteger las funcionalidades 
+de gestión de juegos.
+
+### 3.3. Tecnologías Utilizadas
+- **Symfony**: Framework principal utilizado para desarrollar la aplicación web.
+- **Doctrine ORM**: Utilizado para la gestión de la base de datos y las entidades.
+- **Twig**: Motor de plantillas utilizado para renderizar las vistas.
+- **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar la información de los 
+juegos.
+
+### 3.4. Estructura de la Base de Datos
+La base de datos contiene una tabla principal llamada `juegos` con los siguientes campos:
+- `id`: Identificador único del juego.
+- `titulo`: Título del juego.
+- `descripcion`: Descripción del juego.
+- `fecha_lanzamiento`: Fecha de lanzamiento del juego.
+- `calificacion`: Calificación del juego.
+
+### 3.5. Formularios
+El proyecto incluye formularios para la gestión de juegos, permitiendo a los administradores agregar 
+nuevos juegos o editar los existentes. Los formularios están validados para asegurar que los datos 
+ingresados sean correctos.
+
+### 3.6. Seguridad
+El sistema de seguridad implementado permite la autenticación de usuarios, asegurando que solo 
+los administradores puedan acceder a las funcionalidades de gestión de juegos.
+
+## 4. Pasos realizados en el proyecto
+### 4.1. Creación de nuestro primer controlador
+Creamos un controlador llamado `PageController` para manejar las rutas básicas de la aplicación.
+![not found](./img/wpbndssas5.png)
+Si nos da este error es porque no hemos instalado MakeController:
+![not found](./img/wpbndssas3.png)
+se soluciona:
+```bash
+  composer require symfony/maker-bundle --dev
+```
+![not found](./img/wpbndssas4.png)
+
+## 5. Conclusión
+Este proyecto es una demostración de cómo utilizar Symfony para crear una aplicación web 
+completa con funcionalidades de gestión de datos, seguridad y una interfaz de usuario atractiva. 
+Espero que disfrutes explorando mi biblioteca de juegos de Nintendo DS tanto como yo disfruté 
+creándola. ¡Gracias por visitarla!
