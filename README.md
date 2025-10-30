@@ -7,13 +7,13 @@
 ---
 ## 1. Comandos a utilizar
 ### 1.1. Instalación de las carpetas `/var` y `/vendor` (*composer*)
-Para instalar composer hay que ejecutar este comando:
+Luego tenemos que instalar composer ejecutando este comando:
+```bash
+  composer create-project symfony/skeleton:"6.4.*" web-personal-bibliotecaNDS-SamAdeSan
+```
+Crearemos nuestro proyecto con:
 ```bash
   composer install
-```
-Luego crearemos nuestro proyecto con:
-```bash
-  composer composer create-project symfony/skeleton:"6.4.*" web-personal-bibliotecaNDS-samadesan
 ```
 ---
 ### 1.2. Comandos necesarios para la gestión y la creación de entidades y controladores.
