@@ -1,5 +1,6 @@
-# Mi web de `symphony-contactos`: `biblioteca-juegosNDS`
-¡Hola y bienvenido a mi biblioteca de juegos de Nintendo DS. En esta web encontrarás una enciclopedia de mis juegos favoritos de la clásica NDS.
+# Mi web del apartado de `symphony-contactos`: Biblioteca de juegos de NDS
+¡Hola y bienvenido a mi biblioteca de juegos de Nintendo DS! En esta web encontrarás una enciclopedia de mis juegos favoritos de la clásica NDS. ¡Explora y revive la nostalgia de los juegos de Nintendo DS conmigo!
+
 ---
 - **Autor**: Samuel Aded
 - **Profesor**: Víctor Ponz
@@ -11,10 +12,26 @@ Luego tenemos que instalar composer ejecutando este comando:
 ```bash
   composer create-project symfony/skeleton:"6.4.*" web-personal-bibliotecaNDS-SamAdeSan
 ```
-Crearemos nuestro proyecto con:
+El comando anterior creará la carpeta del proyecto con el nombre `web-personal-bibliotecaNDS-SamAdeSan`.
+
+**¡OJO CON ESTO!**: El comando no funciona si la carpeta ya existe o tiene contenido dentro. 
+Lo que puedes hacer si ya tienes la carpeta creada es borrarla, moverla a otro sitio y copiar después su contenido o crear el proyecto en otra carpeta diferente.
+
+Tras la ejecución del comando anterior, te mostrará algo así:
+
+![Img Err](./img/wpbndssas1.png)
+![Img Err](./img/wpbndssas2.png)
+
+Después de crear el proyecto, tenemos que entrar en la carpeta del proyecto:
 ```bash
+  cd web-personal-bibliotecaNDS-SamAdeSan
+```
+Y para instalar las carpetas `/var` y `/vendor` que contienen las dependencias necesarias para que el proyecto funcione, ejecutamos:
+```bash  
   composer install
 ```
+El comando anterior lo necesitarás cada vez que clones un proyecto de symphony desde GitHub u otra plataforma.
+
 ---
 ### 1.2. Comandos necesarios para la gestión y la creación de entidades y controladores.
 1. Crear controlador
